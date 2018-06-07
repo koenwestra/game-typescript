@@ -1,4 +1,4 @@
-/// <reference path="dev/snake.ts"/>
+/// <reference path="snake.ts"/>
 
 
 module Game {
