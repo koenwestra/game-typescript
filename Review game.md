@@ -4,15 +4,21 @@ https://github.com/Ddvos/Programmeren-4
 Speelbaar:
 https://ddvos.github.io/Programmeren-4
 
-De code van het individuele project staat op GitHub.
+• De code van het individuele project staat op GitHub.
+Ja
+
 • De game is online speelbaar.
   Ja
+  
 • De game bevat minimaal één van de onderstaande extra uitdagingen.
   Nee
+  
 • De game heeft een startscherm en een eindscherm.
   Ja
+  
 • Er zijn geen bugs.
   Nee
+  
 • Het project maakt gebruik van deze OOP principes.
     - Classes Ja
     - Encapsulation Nee
