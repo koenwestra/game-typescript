@@ -36,10 +36,17 @@ Ja
   Nee
 
 Extra uitdagingen
+
 • De game ziet er zeer verzorgd uit dankzij goed uitgewerkt UI design en artwork. X
+
 • De game bevat een hiscore lijst. Scores worden bewaard nadat de game is afgesloten. X
+
 • De game werkt met Canvas in plaats van DOM elementen X
+
 • De game bevat local of online multiplayer. X
+
 • De game werkt op mobiele schermen en ondersteunt touchscreen controls. X
+
 • De game maakt gebruik van device api's zoals de camera, microfoon, gyroscoop of GPS.X
+
 • De game gebruikt een externe library uit de lijst in deze modulewijzer. X
