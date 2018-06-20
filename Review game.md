@@ -25,6 +25,7 @@ De code van het individuele project staat op GitHub.
 
 • Een klassendiagram van de game.
   Nee
+  
 • Een link naar de peer review die in week 6 is gedaan.
   Nee
 
