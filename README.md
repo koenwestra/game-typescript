@@ -16,26 +16,40 @@ https://koenwestra.github.io/game-typescript/
 
 
  - **Classes**
-    In het bestand game.ts
+ 
+    Ik maak gebruik van Classes in mijn game om het overzichtelijk te houden met de functies.
+    
+    Voorbeeld in het bestand game.ts
 
     <img src = "https://github.com/koenwestra/game-typescript/blob/master/docs/img/game.png">
 
  - **Encapsulation**
+ 
+    Ik gebruik encapsulation doormiddel van private in dit bestand hieronder. Je kan ook nog gebruik maken van public of         protected. 
+    
+    Private: Alleen de huidige class heeft alleen toegang.
+    Protected: De huidige class en de subclasses hebben toegang.
+    Public: Alle classes hebben toegang.
+    
 
-    In het bestand game.ts
+    Voorbeeld in het bestand game.ts
    
     <img src = "https://github.com/koenwestra/game-typescript/blob/master/docs/img/game.png">
    
  - **Composition**
+ 
+    Ik heb verschillende documenten die samen komen in game.ts.
    
-    In het bestand game.ts
+    Voorbeeld in het bestand game.ts
    
     <img src = "https://github.com/koenwestra/game-typescript/blob/master/docs/img/game.png">
 
    
  - **Inheritance**
+ 
+     Bij de start.ts en gameover.ts maak ik gebruik van het andere bestand gameobject.ts 
    
-     In de bestanden start.ts en gameover.ts.
+     Voorbeelden in de bestanden start.ts en gameover.ts.
 
     <img src = "https://github.com/koenwestra/game-typescript/blob/master/docs/img/start.png">
     <img src = "https://github.com/koenwestra/game-typescript/blob/master/docs/img/gameover.png">
