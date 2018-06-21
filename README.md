@@ -1,3 +1,6 @@
 # game-typescript
 Game Typescript programmeren jaar 1 periode 4
-Snake game
+
+Explode Emiel Game
+Speelbaar online:
+https://koenwestra.github.io/game-typescript/
