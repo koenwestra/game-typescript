@@ -1,6 +1,6 @@
 ///<reference path="gameobject.ts"/>
 
-class Startscreen extends GameObject {
+class Start extends GameObject {
 
     constructor(s:Pages) {
         console.log("IK BEN EEN STARTtt SCREEN");

@@ -1,4 +1,4 @@
-class Playscreen {
+class Game {
 
     private page : Pages 
     private timer : Timer

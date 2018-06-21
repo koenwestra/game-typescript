@@ -1,7 +1,7 @@
 
 //Alle schermen worden hierin opgeroepen.
 class Pages {
-    private page: Startscreen | Playscreen | Gameover
+    private page: Start | Game | Gameover
 
     private container: HTMLElement
     private background : HTMLElement                                           
@@ -19,7 +19,7 @@ class Pages {
         document.body.appendChild(this.container)
 
         //Variabel "Screen" aanmaken die verwijst naar statscreen.ts class
-        this.page = new Startscreen(this)
+        this.page = new Start(this)
     }
 
     //Word hiernaar toe gestuurd via startscreen.ts
@@ -33,7 +33,7 @@ class Pages {
         // this.container.appendChild(bg);
         
         //"This" is een instance. Doorgestuurd naar "main.ts"
-        this.page = new Playscreen(this)
+        this.page = new Game(this)
     }
 
     //Word afgespeeld wanneer playscreen.ts is uitgespeeld

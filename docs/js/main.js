@@ -8,6 +8,41 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
+var Game = (function () {
+    function Game(s) {
+        this.teacher = [];
+        this.page = s;
+        this.timer = new Timer();
+        this.score = new Score();
+        for (var i = 0; i < 100; i++) {
+            this.teacher.push(new Teacher(this.score));
+        }
+        this.sound = new Howl({
+            src: ['./sounds/theme-song.mp3'],
+            autoplay: true,
+            loop: true
+        });
+        this.sound.play();
+        this.gameLoop();
+    }
+    Game.prototype.gameLoop = function () {
+        var _this = this;
+        for (var _i = 0, _a = this.teacher; _i < _a.length; _i++) {
+            var b = _a[_i];
+            b.update();
+        }
+        this.timer.update();
+        this.score.update();
+        if (this.timer.finished == true) {
+            this.sound.stop();
+            this.page.showEndScreen();
+        }
+        else {
+            requestAnimationFrame(function () { return _this.gameLoop(); });
+        }
+    };
+    return Game;
+}());
 var GameObject = (function () {
     function GameObject(s) {
         this.page = s;
@@ -41,11 +76,11 @@ var Pages = (function () {
         document.body.appendChild(this.background);
         this.container = document.createElement("game");
         document.body.appendChild(this.container);
-        this.page = new Startscreen(this);
+        this.page = new Start(this);
     }
     Pages.prototype.showPlayScreen = function () {
         this.container.innerHTML = "";
-        this.page = new Playscreen(this);
+        this.page = new Game(this);
     };
     Pages.prototype.showEndScreen = function () {
         this.container.innerHTML = "";
@@ -57,41 +92,6 @@ window.addEventListener("load", function () {
     console.log("create new screens");
     new Pages();
 });
-var Playscreen = (function () {
-    function Playscreen(s) {
-        this.teacher = [];
-        this.page = s;
-        this.timer = new Timer();
-        this.score = new Score();
-        for (var i = 0; i < 100; i++) {
-            this.teacher.push(new Teacher(this.score));
-        }
-        this.sound = new Howl({
-            src: ['./sounds/theme-song.mp3'],
-            autoplay: true,
-            loop: true
-        });
-        this.sound.play();
-        this.gameLoop();
-    }
-    Playscreen.prototype.gameLoop = function () {
-        var _this = this;
-        for (var _i = 0, _a = this.teacher; _i < _a.length; _i++) {
-            var b = _a[_i];
-            b.update();
-        }
-        this.timer.update();
-        this.score.update();
-        if (this.timer.finished == true) {
-            this.sound.stop();
-            this.page.showEndScreen();
-        }
-        else {
-            requestAnimationFrame(function () { return _this.gameLoop(); });
-        }
-    };
-    return Playscreen;
-}());
 var Score = (function () {
     function Score() {
         this.score = 0;
@@ -108,9 +108,9 @@ var Score = (function () {
     };
     return Score;
 }());
-var Startscreen = (function (_super) {
-    __extends(Startscreen, _super);
-    function Startscreen(s) {
+var Start = (function (_super) {
+    __extends(Start, _super);
+    function Start(s) {
         var _this = this;
         console.log("IK BEN EEN STARTtt SCREEN");
         _this = _super.call(this, s) || this;
@@ -118,12 +118,12 @@ var Startscreen = (function (_super) {
         _this.div.innerHTML = "START";
         return _this;
     }
-    Startscreen.prototype.update = function () {
+    Start.prototype.update = function () {
     };
-    Startscreen.prototype.startClicked = function () {
+    Start.prototype.startClicked = function () {
         this.page.showPlayScreen();
     };
-    return Startscreen;
+    return Start;
 }(GameObject));
 var Teacher = (function () {
     function Teacher(s) {
@@ -172,7 +172,7 @@ var Teacher = (function () {
 }());
 var Timer = (function () {
     function Timer() {
-        this.secondes = 3000;
+        this.secondes = 300;
         this.posX = 0;
         this.posY = 0;
         this.finished = false;
