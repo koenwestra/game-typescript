@@ -56,7 +56,7 @@ https://koenwestra.github.io/game-typescript/
    
 
 
-    <img src = "../img/gamover.png">
+    <img src = "https://github.com/koenwestra/game-typescript/blob/master/docs/img/gameover.png">
    
 
 
