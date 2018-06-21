@@ -45,6 +45,7 @@ https://koenwestra.github.io/game-typescript/
 
 ## Klassendiagram
 
+<img src = "https://github.com/koenwestra/game-typescript/blob/master/docs/img/classes-diagram.svg">
 
 ## Peer review
 Peer review van Dominique de Vos zijn game
