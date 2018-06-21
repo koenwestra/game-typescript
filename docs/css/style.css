@@ -2,6 +2,7 @@ body {
     overflow:hidden;
     margin:0px; padding:0px;
     font-family: fantasy;
+    touch-action: manipulation;
 }
 
 body * {
