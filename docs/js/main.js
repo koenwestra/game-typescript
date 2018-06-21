@@ -63,7 +63,7 @@ var Playscreen = (function () {
         this.page = s;
         this.timer = new Timer();
         this.score = new Score();
-        for (var i = 0; i < 15; i++) {
+        for (var i = 0; i < 100; i++) {
             this.teacher.push(new Teacher(this.score));
         }
         this.sound = new Howl({
