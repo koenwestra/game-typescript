@@ -16,32 +16,17 @@ https://koenwestra.github.io/game-typescript/
 
 
  - **Classes**
-   - *Waarom toegepast?*
-   
-  
-  
-   - *Waar toegepast?*
-
     In het bestand game.ts
 
     <img src = "https://github.com/koenwestra/game-typescript/blob/master/docs/img/game.png">
 
  - **Encapsulation**
-   - *Waarom toegepast?*
- 
-   
-   - *Waar toegepast?*
-   
+
     In het bestand game.ts
    
     <img src = "https://github.com/koenwestra/game-typescript/blob/master/docs/img/game.png">
    
  - **Composition**
-   - *Waarom toegepast?*
-   
-   
-   
-   - *Waar toegepast?*
    
     In het bestand game.ts
    
@@ -49,11 +34,6 @@ https://koenwestra.github.io/game-typescript/
 
    
  - **Inheritance**
-   - *Waarom toegepast?*
-   
-   
-   
-   - *Waar toegepast?*
    
      In de bestanden start.ts en gameover.ts.
 
