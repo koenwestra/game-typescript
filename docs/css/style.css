@@ -2,7 +2,6 @@ body {
     overflow:hidden;
     margin:0px; padding:0px;
     font-family: fantasy;
-    touch-action: inherit;
 }
 
 body * {
@@ -11,6 +10,10 @@ body * {
     margin:0px; padding:0px;
     box-sizing: border-box;
     background-repeat: no-repeat;
+}
+
+game {
+  touch-action: manipulation;
 }
 
 background {
