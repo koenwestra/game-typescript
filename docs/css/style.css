@@ -2,7 +2,6 @@ body {
     overflow:hidden;
     margin:0px; padding:0px;
     font-family: fantasy;
-    touch-action: none;
 }
 
 body * {
@@ -11,11 +10,10 @@ body * {
     margin:0px; padding:0px;
     box-sizing: border-box;
     background-repeat: no-repeat;
-    touch-action: none;
 }
 
 game {
-  touch-action: none;
+  
 }
 
 background {
@@ -23,6 +21,7 @@ background {
   width:100%; height: 100%;
   background-size: cover;
   background-position: bottom;
+  overflow: hidden;
 }
 
 start {
