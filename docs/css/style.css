@@ -1,23 +1,63 @@
-table {
-  border-bottom: 1px solid black;
-  border-right: 1px solid black;
+body {
+    overflow:hidden;
+    margin:0px; padding:0px;
+    font-family: fantasy;
 }
 
-td {
-  border-left: 1px solid black;
-  border-top: 1px solid black;
-  width: 20px;
-  height: 20px;
+body * {
+    position: absolute;
+    display: block;
+    margin:0px; padding:0px;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
 }
 
-.space {
-  background-color: white;
+background {
+	background-image: url(../img/hogeschool-rotterdam.jpg);
+  width:100%; height: 100%;
+  background-size: cover;
+  background-position: bottom;
 }
 
-.body {
-  background-color: black;
+start {
+  font-size: 4em;
+  cursor: pointer;
+  width: 500px;
+  height: 100px;
+  margin-top: calc(50vh - 50px);
+  margin-left: calc(50vw - 250px);
+  text-align: center;
+  background-color: #cc0133;
+  border: none;
+  color: #1d1d1d;
+  padding: 15px 32px;
+  border-radius: 10px;
 }
 
-.food {
-  background-color: green;
+clock {
+  width: 400px; height: 110px;
+  color: #1d1d1d;
+  font-size: 4em;
 }
+
+score {
+  width: 400px; height: 110px;
+  color: #1d1d1d;
+  font-size: 4em;
+}
+
+teacher {
+    background-image: url(../img/emiel.png);
+    width:130px; height: 110px;
+    -webkit-filter: hue-rotate(90deg);
+    filter: hue-rotate(90deg);
+}
+
+.exploded {
+  background-image: url(../img/explode.png);
+
+}
+
+
+
+

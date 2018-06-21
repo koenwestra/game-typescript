@@ -1,14 +1,12 @@
 {
     "compilerOptions": {
-        "strict": true,
-        "target": "es6",
+        "sourceMap":  true,
         "removeComments": true,
-        "noUnusedLocals":true,
-        "noUnusedParameters":true,
-        "sourceMap": true,
-        "outFile": "docs/js/snake.js"
+        "target":"es5",
+        "out": "docs/js/main.js"
     },
-    "include": [
-        "dev/**/*"
+    "exclude": [
+        "node_modules",
+        "docs"
     ]
 }
