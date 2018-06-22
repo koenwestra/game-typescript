@@ -2,7 +2,7 @@ class Timer {
     private clock:HTMLElement
 
     //1 minuut
-    private secondes : number = 3000
+    private secondes : number = 4000
 
     private posX : number = 0
     private posY : number = 0
