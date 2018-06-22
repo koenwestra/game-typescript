@@ -172,7 +172,7 @@ var Teacher = (function () {
 }());
 var Timer = (function () {
     function Timer() {
-        this.secondes = 300;
+        this.secondes = 3000;
         this.posX = 0;
         this.posY = 0;
         this.finished = false;
